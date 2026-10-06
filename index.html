@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="registration-card">
+
+        <div class="title">
+            <span>★</span> PLAYER REGISTRATION <span>★</span>
+        </div>
+
+        <div class="subtitle">
+            CREATE YOUR PROFILE
+        </div>
+
+        <form id="registrationForm">
+
+            <!-- NAME -->
+            <div class="form-group">
+
+                <label for="name">PLAYER NAME</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <small id="nameError"></small>
+
+            </div>
+
+            <!-- EMAIL -->
+            <div class="form-group">
+
+                <label for="email">EMAIL ADDRESS</label>
+
+                <input
+                    type="text"
+                    id="email"
+                    placeholder="player@email.com"
+                >
+
+                <small id="emailError"></small>
+
+            </div>
+
+            <!-- PHONE -->
+            <div class="form-group">
+
+                <label for="phone">PHONE NUMBER</label>
+
+                <input
+                    type="text"
+                    id="phone"
+                    placeholder="10 digit number"
+                    maxlength="10"
+                >
+
+                <small id="phoneError"></small>
+
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="form-group">
+
+                <label for="password">PASSWORD</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create a password"
+                >
+
+                <small id="passwordError"></small>
+
+            </div>
+
+            <!-- CONFIRM PASSWORD -->
+            <div class="form-group">
+
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Repeat password"
+                >
+
+                <small id="confirmPasswordError"></small>
+
+            </div>
+
+            <button type="submit" class="register-btn">
+                [ CREATE PROFILE ]
+            </button>
+
+            <div id="successMessage"></div>
+
+        </form>
+
+        <div class="footer">
+            <span>♥</span> JAVASCRIPT LAB 03 <span>♥</span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

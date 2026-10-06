@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0;
+
+    background-color: #f7d9e3;
+
+    background-image:
+        linear-gradient(#efc5d2 2px, transparent 2px),
+        linear-gradient(90deg, #efc5d2 2px, transparent 2px);
+
+    background-size: 32px 32px;
+
+    font-family: 'Press Start 2P', monospace;
+
+    color: #493449;
+}
+
+/* ============================= */
+/* REGISTRATION CARD */
+/* ============================= */
+
+.registration-card {
+
+    width: 430px;
+
+    max-width: 92%;
+
+    padding: 26px;
+
+    background-color: #fff3d6;
+
+    border: 6px solid #493449;
+
+    box-shadow:
+        8px 8px 0 #493449,
+        14px 14px 0 #c58aa0;
+}
+
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
+.title {
+
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #d45d79;
+
+    margin-bottom: 12px;
+}
+
+.title span {
+    color: #f0a34a;
+}
+
+.subtitle {
+
+    text-align: center;
+
+    font-size: 7px;
+
+    color: #9a7184;
+
+    margin-bottom: 25px;
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.form-group {
+
+    margin-bottom: 18px;
+}
+
+label {
+
+    display: block;
+
+    font-size: 8px;
+
+    margin-bottom: 8px;
+
+    color: #745267;
+}
+
+input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    font-family: 'Press Start 2P', monospace;
+
+    font-size: 10px;
+
+    color: #493449;
+
+    background-color: #fffaf0;
+
+    border: 4px solid #493449;
+
+    outline: none;
+}
+
+input:focus {
+
+    background-color: #fff0f5;
+
+    box-shadow: 4px 4px 0 #d45d79;
+}
+
+input::placeholder {
+
+    color: #c5a9b3;
+}
+
+/* ============================= */
+/* ERROR MESSAGE */
+/* ============================= */
+
+small {
+
+    display: block;
+
+    min-height: 12px;
+
+    margin-top: 7px;
+
+    font-size: 7px;
+
+    line-height: 1.6;
+
+    color: #c94f61;
+}
+
+/* ============================= */
+/* VALID / INVALID INPUT */
+/* ============================= */
+
+input.valid {
+
+    border-color: #6b9b68;
+}
+
+input.invalid {
+
+    border-color: #c94f61;
+
+    background-color: #fff0f0;
+}
+
+/* ============================= */
+/* REGISTER BUTTON */
+/* ============================= */
+
+.register-btn {
+
+    width: 100%;
+
+    margin-top: 5px;
+
+    padding: 16px;
+
+    font-family: 'Press Start 2P', monospace;
+
+    font-size: 9px;
+
+    color: white;
+
+    background-color: #d45d79;
+
+    border: 5px solid #493449;
+
+    cursor: pointer;
+
+    box-shadow: 5px 5px 0 #493449;
+}
+
+.register-btn:hover {
+
+    background-color: #e87591;
+}
+
+.register-btn:active {
+
+    transform: translate(4px, 4px);
+
+    box-shadow: 1px 1px 0 #493449;
+}
+
+/* ============================= */
+/* SUCCESS MESSAGE */
+/* ============================= */
+
+#successMessage {
+
+    margin-top: 18px;
+
+    padding: 14px;
+
+    text-align: center;
+
+    font-size: 8px;
+
+    line-height: 1.8;
+
+    color: #31452f;
+
+    background-color: #b8d8b0;
+
+    border: 4px solid #493449;
+
+    display: none;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    font-size: 7px;
+
+    color: #9a7184;
+}
+
+.footer span {
+
+    color: #d45d79;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 500px) {
+
+    .registration-card {
+
+        padding: 18px;
+    }
+
+    .title {
+
+        font-size: 11px;
+    }
+
+    input {
+
+        font-size: 8px;
+    }
+
+    .register-btn {
+
+        font-size: 8px;
+    }
+}
